@@ -1,0 +1,84 @@
+[2020-04-02 19:46:49] production.ERROR: ErrorException: Array to string conversion in C:\Users\gomes\market\routes\web.php:24
+Stack trace:
+#0 C:\Users\gomes\market\bootstrap\app.php(112): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}(8, 'Array to string...', 'C:\\Users\\gomes\\...', 24, Array)
+#1 C:\Users\gomes\market\bootstrap\app.php(112): require()
+#2 [internal function]: {closure}(Object(Laravel\Lumen\Routing\Router))
+#3 C:\Users\gomes\market\vendor\laravel\lumen-framework\src\Routing\Router.php(62): call_user_func(Object(Closure), Object(Laravel\Lumen\Routing\Router))
+#4 C:\Users\gomes\market\bootstrap\app.php(113): Laravel\Lumen\Routing\Router->group(Array, Object(Closure))
+#5 C:\Users\gomes\market\artisan(18): require('C:\\Users\\gomes\\...')
+#6 {main} {"exception":"[object] (ErrorException(code: 0): Array to string conversion at C:\\Users\\gomes\\market\outes\\web.php:24)
+[stacktrace]
+#0 C:\\Users\\gomes\\market\\bootstrap\\app.php(112): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(8, 'Array to string...', 'C:\\\\Users\\\\gomes\\\\...', 24, Array)
+#1 C:\\Users\\gomes\\market\\bootstrap\\app.php(112): require()
+#2 [internal function]: {closure}(Object(Laravel\\Lumen\\Routing\\Router))
+#3 C:\\Users\\gomes\\market\\vendor\\laravel\\lumen-framework\\src\\Routing\\Router.php(62): call_user_func(Object(Closure), Object(Laravel\\Lumen\\Routing\\Router))
+#4 C:\\Users\\gomes\\market\\bootstrap\\app.php(113): Laravel\\Lumen\\Routing\\Router->group(Array, Object(Closure))
+#5 C:\\Users\\gomes\\market\\artisan(18): require('C:\\\\Users\\\\gomes\\\\...')
+#6 {main}
+"} 
+[2020-04-02 19:50:51] production.ERROR: ErrorException: Array to string conversion in C:\Users\gomes\market\routes\web.php:24
+Stack trace:
+#0 C:\Users\gomes\market\bootstrap\app.php(112): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}(8, 'Array to string...', 'C:\\Users\\gomes\\...', 24, Array)
+#1 C:\Users\gomes\market\bootstrap\app.php(112): require()
+#2 [internal function]: {closure}(Object(Laravel\Lumen\Routing\Router))
+#3 C:\Users\gomes\market\vendor\laravel\lumen-framework\src\Routing\Router.php(62): call_user_func(Object(Closure), Object(Laravel\Lumen\Routing\Router))
+#4 C:\Users\gomes\market\bootstrap\app.php(113): Laravel\Lumen\Routing\Router->group(Array, Object(Closure))
+#5 C:\Users\gomes\market\artisan(18): require('C:\\Users\\gomes\\...')
+#6 {main} {"exception":"[object] (ErrorException(code: 0): Array to string conversion at C:\\Users\\gomes\\market\outes\\web.php:24)
+[stacktrace]
+#0 C:\\Users\\gomes\\market\\bootstrap\\app.php(112): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(8, 'Array to string...', 'C:\\\\Users\\\\gomes\\\\...', 24, Array)
+#1 C:\\Users\\gomes\\market\\bootstrap\\app.php(112): require()
+#2 [internal function]: {closure}(Object(Laravel\\Lumen\\Routing\\Router))
+#3 C:\\Users\\gomes\\market\\vendor\\laravel\\lumen-framework\\src\\Routing\\Router.php(62): call_user_func(Object(Closure), Object(Laravel\\Lumen\\Routing\\Router))
+#4 C:\\Users\\gomes\\market\\bootstrap\\app.php(113): Laravel\\Lumen\\Routing\\Router->group(Array, Object(Closure))
+#5 C:\\Users\\gomes\\market\\artisan(18): require('C:\\\\Users\\\\gomes\\\\...')
+#6 {main}
+"} 
+[2020-04-02 19:53:35] production.ERROR: Symfony\Component\Console\Exception\CommandNotFoundException: Command "server" is not defined. in C:\Users\gomes\market\vendor\symfony\console\Application.php:644
+Stack trace:
+#0 C:\Users\gomes\market\vendor\symfony\console\Application.php(228): Symfony\Component\Console\Application->find('server')
+#1 C:\Users\gomes\market\vendor\symfony\console\Application.php(140): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 C:\Users\gomes\market\vendor\illuminate\console\Application.php(93): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 C:\Users\gomes\market\vendor\laravel\lumen-framework\src\Console\Kernel.php(116): Illuminate\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 C:\Users\gomes\market\artisan(35): Laravel\Lumen\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 {main} {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"server\" is not defined. at C:\\Users\\gomes\\market\\vendor\\symfony\\console\\Application.php:644)
+[stacktrace]
+#0 C:\\Users\\gomes\\market\\vendor\\symfony\\console\\Application.php(228): Symfony\\Component\\Console\\Application->find('server')
+#1 C:\\Users\\gomes\\market\\vendor\\symfony\\console\\Application.php(140): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 C:\\Users\\gomes\\market\\vendor\\illuminate\\console\\Application.php(93): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 C:\\Users\\gomes\\market\\vendor\\laravel\\lumen-framework\\src\\Console\\Kernel.php(116): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 C:\\Users\\gomes\\market\\artisan(35): Laravel\\Lumen\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2020-04-02 19:54:02] production.ERROR: Symfony\Component\Console\Exception\CommandNotFoundException: Command "serve" is not defined. in C:\Users\gomes\market\vendor\symfony\console\Application.php:644
+Stack trace:
+#0 C:\Users\gomes\market\vendor\symfony\console\Application.php(228): Symfony\Component\Console\Application->find('serve')
+#1 C:\Users\gomes\market\vendor\symfony\console\Application.php(140): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 C:\Users\gomes\market\vendor\illuminate\console\Application.php(93): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 C:\Users\gomes\market\vendor\laravel\lumen-framework\src\Console\Kernel.php(116): Illuminate\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 C:\Users\gomes\market\artisan(35): Laravel\Lumen\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 {main} {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"serve\" is not defined. at C:\\Users\\gomes\\market\\vendor\\symfony\\console\\Application.php:644)
+[stacktrace]
+#0 C:\\Users\\gomes\\market\\vendor\\symfony\\console\\Application.php(228): Symfony\\Component\\Console\\Application->find('serve')
+#1 C:\\Users\\gomes\\market\\vendor\\symfony\\console\\Application.php(140): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 C:\\Users\\gomes\\market\\vendor\\illuminate\\console\\Application.php(93): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 C:\\Users\\gomes\\market\\vendor\\laravel\\lumen-framework\\src\\Console\\Kernel.php(116): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 C:\\Users\\gomes\\market\\artisan(35): Laravel\\Lumen\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2020-04-02 19:54:52] production.ERROR: Symfony\Component\Console\Exception\CommandNotFoundException: Command "serve" is not defined. in C:\Users\gomes\market\vendor\symfony\console\Application.php:644
+Stack trace:
+#0 C:\Users\gomes\market\vendor\symfony\console\Application.php(228): Symfony\Component\Console\Application->find('serve')
+#1 C:\Users\gomes\market\vendor\symfony\console\Application.php(140): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 C:\Users\gomes\market\vendor\illuminate\console\Application.php(93): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 C:\Users\gomes\market\vendor\laravel\lumen-framework\src\Console\Kernel.php(116): Illuminate\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 C:\Users\gomes\market\artisan(35): Laravel\Lumen\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 {main} {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"serve\" is not defined. at C:\\Users\\gomes\\market\\vendor\\symfony\\console\\Application.php:644)
+[stacktrace]
+#0 C:\\Users\\gomes\\market\\vendor\\symfony\\console\\Application.php(228): Symfony\\Component\\Console\\Application->find('serve')
+#1 C:\\Users\\gomes\\market\\vendor\\symfony\\console\\Application.php(140): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 C:\\Users\\gomes\\market\\vendor\\illuminate\\console\\Application.php(93): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 C:\\Users\\gomes\\market\\vendor\\laravel\\lumen-framework\\src\\Console\\Kernel.php(116): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 C:\\Users\\gomes\\market\\artisan(35): Laravel\\Lumen\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 

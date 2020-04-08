@@ -1,0 +1,49 @@
+  CREATE TABLE `marketbd`.`cliente` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `nome` VARCHAR(45) NOT NULL,
+  `sobrenome` VARCHAR(45) NOT NULL,
+  `cpf` INT NOT NULL,
+  `email` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`id`));
+
+  CREATE TABLE `marketbd`.`funcionario` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `nome` VARCHAR(45) NOT NULL,
+  `sobrenome` VARCHAR(45) NOT NULL,
+  `cpf` INT NOT NULL,
+  `email` VARCHAR(45) NOT NULL,
+  `senha` VARCHAR(45) NOT NULL,
+  `salario` FLOAT NOT NULL,
+  PRIMARY KEY (`id`));
+
+CREATE TABLE `marketbd`.`produto` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `nome` VARCHAR(45) NOT NULL,
+  `categoria` VARCHAR(45) NOT NULL,
+  `preco` FLOAT NOT NULL,
+  PRIMARY KEY (`id`));
+
+  CREATE TABLE `marketbd`.`venda` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `valor` FLOAT NOT NULL,
+  `data`DATE NOT NULL DEFAULT NOW(),
+  PRIMARY KEY (`id`),
+  `fkcliente` INT NOT NULL,
+  CONSTRAINT fkcliente 
+  FOREIGN KEY (`fkcliente`)  REFERENCES cliente(`id`),
+  `fkfuncionario` INT NOT NULL,
+  CONSTRAINT fkfuncionario
+  FOREIGN KEY (`fkfuncionario`) REFERENCES funcionario(`id`)
+  );
+
+  CREATE TABLE `marketbd`.`listaprodutos` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `quantidade` INT NOT NULL,
+  PRIMARY KEY (`id`),
+  `fkvenda` INT NOT NULL,
+  CONSTRAINT fkvenda 
+  FOREIGN KEY (`fkvenda`)  REFERENCES venda(`id`),
+  `fkproduto` INT NOT NULL,
+  CONSTRAINT fkproduto
+  FOREIGN KEY (`fkproduto`) REFERENCES produto(`id`)
+  );
